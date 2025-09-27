@@ -22,7 +22,7 @@ public class Pais {
                 .map(i -> i.name())
                 .toList();
         this.limites = dp.limites();
-        this.area = dp.area();
+        this.area = dp.area() != null ? dp.area() : 0;
     }
 
     public Boolean esIsla(){
